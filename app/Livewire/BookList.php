@@ -4,12 +4,14 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use App\Models\Book;
+use Livewire\Attributes\Title;
 
 class BookList extends Component
 {
 
 
-    public $name = 'Mario';
+
+
 
 
     public function delete(Book $book){
@@ -18,6 +20,7 @@ class BookList extends Component
 
     }
 
+    #[Title('Book List - Home')]
     public function render()
     {
         return view('livewire.book-list', [
