@@ -22,36 +22,37 @@ La aplicación permite **guardar libros con una puntuación** y demuestra varias
 
 Sigue estos pasos para poner en marcha la aplicación en local:
 
-### 1. Clonar el repositorio
-
 ```bash
+# 1. Clonar el repositorio
 git clone https://github.com/luisojsm/book-review-livewire.git
 cd book-review-livewire
 
-### 2. Instalar dependencisa de PHP y Node.js
-```composer install
+# 2. Instalar dependencias de PHP y Node.js
+composer install
 npm install
 
-### 3. Copiar el archivo de entorno y generar la clave
-```cp .env.example .env
+# 3. Copiar el archivo de entorno y generar la clave
+cp .env.example .env
 php artisan key:generate
 
-### 4. Configurar la base de datos
-```DB_DATABASE=nombre_de_tu_bd
-DB_USERNAME=tu_usuario
-DB_PASSWORD=tu_contraseña
+# 4. Configurar la base de datos (editar .env)
+# Ejemplo:
+# DB_DATABASE=nombre_de_tu_bd
+# DB_USERNAME=tu_usuario
+# DB_PASSWORD=tu_contraseña
 
-### 5. Ejecutar migraciones
-```php artisan migrate
+# 5. Ejecutar migraciones
+php artisan migrate
 
-### 6.  Compilar los assets con Vite
-```npm run dev
+# 6. Compilar los assets con Vite
+npm run dev
 
-### 7. Iniciar el servidor
-```php artisan serve
+# 7. Iniciar el servidor
+php artisan serve
 
 
-##📦 Requisitos
+---
+## 📦 Requisitos
 - PHP >= 8.1
 
 - Composer
@@ -61,6 +62,3 @@ DB_PASSWORD=tu_contraseña
 - Laravel 10+
 
 - MySQL o equivalente
-
-
-
