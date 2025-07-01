@@ -49,7 +49,7 @@ npm run dev
 
 # 7. Iniciar el servidor
 php artisan serve
-
+```
 
 ---
 ## 📦 Requisitos
